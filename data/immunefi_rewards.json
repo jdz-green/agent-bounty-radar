@@ -1,0 +1,582 @@
+{
+ "sky": {
+  "project": "Sky",
+  "max": 10000000,
+  "tiers": {
+   "Critical": 10000000,
+   "High": 100000,
+   "Medium": 5000,
+   "Low": 1000
+  }
+ },
+ "sparklend": {
+  "project": "Spark",
+  "max": 5000000,
+  "tiers": {
+   "Critical": 5000000,
+   "High": 100000,
+   "Medium": 2500
+  }
+ },
+ "gmx": {
+  "project": "GMX",
+  "max": 5000000,
+  "tiers": {
+   "Critical": 50000,
+   "High": 25000,
+   "Medium": 10000,
+   "Low": 250
+  }
+ },
+ "olympus": {
+  "project": "Olympus",
+  "max": 3333333,
+  "tiers": {
+   "Critical": 3333333
+  }
+ },
+ "rhinofi": {
+  "project": "Rhino.fi",
+  "max": 2000000,
+  "tiers": {
+   "Critical": 2000000,
+   "High": 100000,
+   "Medium": 10000,
+   "Low": 1000
+  }
+ },
+ "gnosischain": {
+  "project": "Gnosis Chain",
+  "max": 2000000,
+  "tiers": {
+   "Critical": 2000000,
+   "High": 50000,
+   "Medium": 10000
+  }
+ },
+ "lido": {
+  "project": "Lido",
+  "max": 2000000,
+  "tiers": {
+   "Critical": 2000000,
+   "High": 250000,
+   "Medium": 50000,
+   "Low": 1000
+  }
+ },
+ "beanstalk": {
+  "project": "Beanstalk",
+  "max": 1100000,
+  "tiers": {
+   "Critical": 1100000,
+   "High": 100000,
+   "Medium": 10000
+  }
+ },
+ "staderforeth": {
+  "project": "Stader for ETH",
+  "max": 1000000,
+  "tiers": {
+   "Critical": 1000000,
+   "High": 100000,
+   "Medium": 20000
+  }
+ },
+ "listadao": {
+  "project": "Lista DAO",
+  "max": 1000000,
+  "tiers": {
+   "Critical": 1000000,
+   "High": 10000,
+   "Medium": 5000
+  }
+ },
+ "balancer": {
+  "project": "Balancer Foundation",
+  "max": 1000000,
+  "tiers": {
+   "Critical": 1000000,
+   "High": 75000
+  }
+ },
+ "originprotocol": {
+  "project": "Origin Protocol",
+  "max": 1000000,
+  "tiers": {
+   "High": 15000
+  }
+ },
+ "pancakeswap": {
+  "project": "PancakeSwap",
+  "max": 1000000,
+  "tiers": {
+   "Critical": 1000000,
+   "High": 20000,
+   "Medium": 1500
+  }
+ },
+ "fluxfinance": {
+  "project": "Flux Finance",
+  "max": 550000,
+  "tiers": {
+   "Critical": 550000,
+   "High": 25000,
+   "Medium": 10000,
+   "Low": 1000
+  }
+ },
+ "raydium": {
+  "project": "Raydium",
+  "max": 505000,
+  "tiers": {
+   "Critical": 505000,
+   "High": 40000,
+   "Medium": 5000
+  }
+ },
+ "metric": {
+  "project": "Metric",
+  "max": 500000,
+  "tiers": {
+   "Critical": 500000,
+   "High": 50000,
+   "Medium": 10000,
+   "Low": 1000
+  }
+ },
+ "mETH": {
+  "project": "mETH Protocol",
+  "max": 500000,
+  "tiers": {
+   "Critical": 500000,
+   "High": 100000,
+   "Medium": 5000
+  }
+ },
+ "utix": {
+  "project": "Utix",
+  "max": 500000,
+  "tiers": {
+   "Critical": 500000
+  }
+ },
+ "ankr": {
+  "project": "Ankr",
+  "max": 500000,
+  "tiers": {
+   "Critical": 500000,
+   "High": 50000,
+   "Medium": 5000,
+   "Low": 1000
+  }
+ },
+ "orca": {
+  "project": "Orca",
+  "max": 500000,
+  "tiers": {
+   "High": 50000,
+   "Medium": 10000
+  }
+ },
+ "instadapp": {
+  "project": "Instadapp",
+  "max": 500000,
+  "tiers": {
+   "Critical": 500000,
+   "High": 100000
+  }
+ },
+ "benqi": {
+  "project": "BENQI",
+  "max": 500000,
+  "tiers": {
+   "Critical": 10000,
+   "High": 5000
+  }
+ },
+ "defisaver": {
+  "project": "DeFi Saver",
+  "max": 350000,
+  "tiers": {
+   "Critical": 20000,
+   "High": 30000,
+   "Medium": 10000
+  }
+ },
+ "Aevo": {
+  "project": "Aevo",
+  "max": 300000,
+  "tiers": {
+   "Critical": 300000,
+   "High": 50000,
+   "Medium": 25000,
+   "Low": 1000
+  }
+ },
+ "marinade": {
+  "project": "Marinade",
+  "max": 250000,
+  "tiers": {
+   "Critical": 250000,
+   "High": 15000
+  }
+ },
+ "hydration": {
+  "project": "Hydration",
+  "max": 222222,
+  "tiers": {
+   "Critical": 222222,
+   "High": 10000,
+   "Medium": 2500,
+   "Low": 1000
+  }
+ },
+ "enzyme-onyx": {
+  "project": "Enzyme Onyx",
+  "max": 200000,
+  "tiers": {
+   "Critical": 200000,
+   "High": 20000,
+   "Medium": 5000
+  }
+ },
+ "aster": {
+  "project": "Aster",
+  "max": 200000,
+  "tiers": {
+   "Critical": 200000,
+   "High": 20000,
+   "Medium": 5000
+  }
+ },
+ "beets": {
+  "project": "Beets",
+  "max": 200000,
+  "tiers": {
+   "Critical": 200000,
+   "High": 20000
+  }
+ },
+ "debridge": {
+  "project": "deBridge",
+  "max": 200000,
+  "tiers": {
+   "Critical": 200000,
+   "High": 40000,
+   "Medium": 5000
+  }
+ },
+ "yearnfinance": {
+  "project": "Yearn Finance",
+  "max": 200000,
+  "tiers": {
+   "Critical": 200000,
+   "High": 20000,
+   "Medium": 5000
+  }
+ },
+ "enzymefinance": {
+  "project": "Enzyme Blue",
+  "max": 200000,
+  "tiers": {
+   "Critical": 200000,
+   "High": 20000
+  }
+ },
+ "sushiswap": {
+  "project": "SushiSwap",
+  "max": 200000,
+  "tiers": {
+   "Critical": 200000,
+   "High": 20000,
+   "Medium": 5000,
+   "Low": 1000
+  }
+ },
+ "alchemix-1": {
+  "project": "Alchemix",
+  "max": 150000,
+  "tiers": {
+   "Critical": 150000,
+   "High": 20000,
+   "Medium": 3000,
+   "Low": 1000
+  }
+ },
+ "thresholdnetwork": {
+  "project": "Threshold Network",
+  "max": 150000,
+  "tiers": {
+   "Critical": 150000,
+   "High": 10000,
+   "Medium": 2000
+  }
+ },
+ "gmtrade": {
+  "project": "GMTrade",
+  "max": 100000,
+  "tiers": {
+   "Critical": 100000,
+   "High": 15000,
+   "Medium": 5000
+  }
+ },
+ "hermetica": {
+  "project": "Hermetica",
+  "max": 100000,
+  "tiers": {
+   "Critical": 100000,
+   "High": 20000
+  }
+ },
+ "zest-protocol-v2": {
+  "project": "Zest Protocol V2",
+  "max": 100000,
+  "tiers": {
+   "Critical": 100000,
+   "High": 20000
+  }
+ },
+ "arkadiko": {
+  "project": "Arkadiko",
+  "max": 100000,
+  "tiers": {
+   "Critical": 100000,
+   "High": 20000
+  }
+ },
+ "stackingdao": {
+  "project": "StackingDAO",
+  "max": 100000,
+  "tiers": {
+   "Critical": 100000,
+   "High": 20000
+  }
+ },
+ "extrafinance": {
+  "project": "Extra Finance",
+  "max": 100000,
+  "tiers": {
+   "Critical": 100000,
+   "High": 15000,
+   "Medium": 3000
+  }
+ },
+ "symbiosis": {
+  "project": "Symbiosis",
+  "max": 100000,
+  "tiers": {
+   "Critical": 100000
+  }
+ },
+ "synthetix": {
+  "project": "Synthetix",
+  "max": 100000,
+  "tiers": {
+   "Critical": 100000,
+   "High": 50000,
+   "Medium": 1000,
+   "Low": 1000
+  }
+ },
+ "harvest": {
+  "project": "Harvest Finance",
+  "max": 100000,
+  "tiers": {
+   "Critical": 5000,
+   "High": 10000,
+   "Medium": 5000,
+   "Low": 2500
+  }
+ },
+ "beefyfinance": {
+  "project": "Beefy Finance",
+  "max": 75000,
+  "tiers": {
+   "Critical": 75000,
+   "High": 15000,
+   "Medium": 2000,
+   "Low": 500
+  }
+ },
+ "velvetcapital": {
+  "project": "Velvet Capital",
+  "max": 51000,
+  "tiers": {
+   "Critical": 51000,
+   "High": 10000,
+   "Medium": 1000
+  }
+ },
+ "dawn": {
+  "project": "DAWN USD.infra Vault",
+  "max": 50000,
+  "tiers": {
+   "Critical": 50000,
+   "High": 3500,
+   "Medium": 2000,
+   "Low": 1000
+  }
+ },
+ "twyne": {
+  "project": "Twyne",
+  "max": 50000,
+  "tiers": {
+   "Critical": 50000,
+   "High": 10000
+  }
+ },
+ "magpiexyz": {
+  "project": "MagpieXYZ",
+  "max": 50000,
+  "tiers": {
+   "Medium": 4000,
+   "Low": 1000
+  }
+ },
+ "justlenddao": {
+  "project": "JustLend DAO",
+  "max": 50000,
+  "tiers": {
+   "Critical": 50000,
+   "High": 20000,
+   "Medium": 10000
+  }
+ },
+ "hashflow": {
+  "project": "Hashflow",
+  "max": 50000,
+  "tiers": {
+   "Critical": 50000,
+   "Low": 2500
+  }
+ },
+ "dhedge": {
+  "project": "dHEDGE",
+  "max": 50000,
+  "tiers": {
+   "Critical": 50000
+  }
+ },
+ "gamma": {
+  "project": "Gamma",
+  "max": 50000,
+  "tiers": {
+   "Critical": 50000,
+   "Medium": 5000
+  }
+ },
+ "derive": {
+  "project": "Derive",
+  "max": 50000,
+  "tiers": {
+   "Critical": 50000,
+   "High": 5000,
+   "Medium": 2000,
+   "Low": 500
+  }
+ },
+ "ichi": {
+  "project": "Ichi",
+  "max": 50000,
+  "tiers": {
+   "Critical": 50000,
+   "High": 20000,
+   "Medium": 5000,
+   "Low": 1000
+  }
+ },
+ "pareto": {
+  "project": "Pareto Credit",
+  "max": 50000,
+  "tiers": {
+   "Critical": 50000,
+   "High": 20000,
+   "Medium": 5000
+  }
+ },
+ "obyte": {
+  "project": "Obyte",
+  "max": 50000,
+  "tiers": {
+   "Critical": 50000,
+   "High": 1700,
+   "Medium": 1000
+  }
+ },
+ "gammaswap": {
+  "project": "GammaSwap",
+  "max": 40000,
+  "tiers": {
+   "Critical": 40000
+  }
+ },
+ "nexusmutual": {
+  "project": "Nexus Mutual",
+  "max": 25000,
+  "tiers": {
+   "Critical": 25000,
+   "High": 10000,
+   "Medium": 3000
+  }
+ },
+ "sp1": {
+  "project": "SP1",
+  "max": 15000,
+  "tiers": {
+   "Critical": 15000,
+   "High": 5000,
+   "Medium": 2000
+  }
+ },
+ "charm": {
+  "project": "Charm",
+  "max": 6000,
+  "tiers": {
+   "Critical": 6000,
+   "High": 3000,
+   "Medium": 1500,
+   "Low": 1000
+  }
+ },
+ "blockpinetwork": {
+  "project": "BlockPI Network",
+  "max": 5000,
+  "tiers": {
+   "Critical": 5000,
+   "High": 1500,
+   "Medium": 1200,
+   "Low": 1000
+  }
+ },
+ "mtpelerin": {
+  "project": "Mt Pelerin",
+  "max": 3500,
+  "tiers": {
+   "Critical": 3500,
+   "High": 1000
+  }
+ },
+ "ipor": {
+  "project": "IPOR",
+  "max": 1000,
+  "tiers": {
+   "Critical": 1000
+  }
+ },
+ "unstoppablewallet": {
+  "project": "Unstoppable Wallet",
+  "max": 1000,
+  "tiers": {
+   "Critical": 1000,
+   "High": 1000
+  }
+ },
+ "acala": {
+  "project": "Acala",
+  "max": 1000,
+  "tiers": {
+   "Critical": 1000
+  }
+ }
+}

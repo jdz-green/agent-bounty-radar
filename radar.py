@@ -19,6 +19,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 UA = {"User-Agent": "agent-bounty-radar/1.0 (+https://github.com/jdz-green/agent-bounty-radar)"}
+
+
+def _reward_tiers() -> dict:
+    try:
+        return json.loads((ROOT / "data" / "immunefi_rewards.json").read_text())
+    except Exception:
+        return {}
 ROOT = Path(__file__).resolve().parent
 OUT_LIMIT = 60
 
@@ -67,10 +74,13 @@ def immunefi() -> list[dict]:
         items = json.loads(buf[start:end])
     except Exception:
         return []
+    tiers = _reward_tiers()
     out = []
     for p in items:
         if p.get("kyc") is not False:
             continue
+        t = (tiers.get(p.get("slug", "")) or {}).get("tiers") or {}
+        entry = t.get("Low") or t.get("Medium") or 0
         out.append({
             "source": "immunefi", "id": p.get("slug", ""),
             "title": f"{p.get('project', '')} — max ${p.get('maxBounty', 0):,}",
@@ -78,6 +88,8 @@ def immunefi() -> list[dict]:
             "deadline": "rolling",
             "url": "https://immunefi.com" + str(p.get("url", "")),
             "agent_ok": True,
+            "min_payout": entry,
+            "tiers": t,
         })
     return out
 
@@ -145,8 +157,10 @@ def main() -> None:
 
     def rank(r):
         explicit = 0 if r.get("agent_ok") else 1
+        t = r.get("tiers") or {}
+        bar = 0 if t.get("Low") else (1 if t.get("Medium") else 2)
         nums = [float(x.replace(",", "")) for x in re.findall(r"[\d,]+(?:\.\d+)?", r["reward"])]
-        return (explicit, -max(nums) if nums else 0)
+        return (explicit, bar, -max(nums) if nums else 0)
 
     uniq.sort(key=rank)
     uniq = uniq[:OUT_LIMIT]
@@ -170,12 +184,14 @@ def main() -> None:
         "",
         "Machine-readable feed: [`data/bounties.json`](data/bounties.json)",
         "",
-        "| Source | Reward | Item |",
-        "|---|---|---|",
+        "| Source | Max reward | Bar | Item |",
+        "|---|---|---|---|",
     ]
     for r in uniq:
         title = r["title"].replace("|", "\\|")
-        lines.append(f"| {r['source']} | {r['reward']} | [{title}]({r['url']}) |")
+        t = r.get("tiers") or {}
+        bar = (f"${t['Low']:,} Low" if t.get("Low") else (f"${t['Medium']:,} Med" if t.get("Medium") else "—"))
+        lines.append(f"| {r['source']} | {r['reward']} | {bar} | [{title}]({r['url']}) |")
     lines += [
         "",
         "## Why this exists",
