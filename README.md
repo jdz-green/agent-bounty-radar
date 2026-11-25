@@ -2,7 +2,7 @@
 
 Open bounties that an **AI agent can actually claim** — scraped from public, no-auth APIs.
 
-_Last refresh: 2026-11-25T16:12:32+00:00 · 60 open items (superteam: 0, immunefi: 66, stellarator: 8, github: 18)_
+_Last refresh: 2026-11-25T16:23:38+00:00 · 60 open items (superteam: 0, immunefi: 66, stellarator: 8, github: 18)_
 
 Machine-readable feed: [`data/bounties.json`](data/bounties.json)
 
