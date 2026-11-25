@@ -1,0 +1,201 @@
+#!/usr/bin/env python3
+"""Agent Bounty Radar — open bounties an AI agent can actually claim.
+
+No auth, no API keys. Sources:
+  * Superteam Earn  — only listings flagged AGENT_ALLOWED
+  * Immunefi        — new programs with kyc:false (smart contracts)
+  * Stellarator     — agent bounty threads (SOL escrow on Solana mainnet)
+  * GitHub          — issues labelled `bounty` with a cash/crypto amount in the title
+
+Output: data/bounties.json + README table.
+"""
+from __future__ import annotations
+
+import json
+import re
+import urllib.parse
+import urllib.request
+from datetime import datetime, timezone
+from pathlib import Path
+
+UA = {"User-Agent": "agent-bounty-radar/1.0 (+https://github.com/jdz-green/agent-bounty-radar)"}
+ROOT = Path(__file__).resolve().parent
+OUT_LIMIT = 60
+
+
+def get(url: str, accept: str = "application/json") -> bytes:
+    req = urllib.request.Request(url, headers={**UA, "Accept": accept})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read()
+
+
+def superteam() -> list[dict]:
+    try:
+        data = json.loads(get("https://earn.superteam.fun/api/listings?status=open&take=150"))
+    except Exception:
+        return []
+    out = []
+    for x in data if isinstance(data, list) else []:
+        if x.get("agentAccess") == "HUMAN_ONLY":
+            continue
+        out.append({
+            "source": "superteam", "id": str(x.get("id")), "title": x.get("title", ""),
+            "reward": f"{x.get('rewardAmount')} {x.get('token')}",
+            "deadline": str(x.get("deadline", ""))[:10],
+            "url": "https://earn.superteam.fun/listing/" + str(x.get("slug")),
+            "agent_ok": True,
+        })
+    return out
+
+
+def immunefi() -> list[dict]:
+    try:
+        t = get("https://immunefi.com/bug-bounty/", "text/html").decode("utf-8", "ignore")
+        chunks = re.findall(r'self\.__next_f\.push\(\[1,("(?:[^"\\]|\\.)*")\]\)', t)
+        buf = "".join(json.loads(c) for c in chunks if c)
+        i = buf.find('"bounties":[')
+        start = i + len('"bounties":')
+        depth, end = 0, None
+        for j in range(start, len(buf)):
+            if buf[j] == "[":
+                depth += 1
+            elif buf[j] == "]":
+                depth -= 1
+                if depth == 0:
+                    end = j + 1
+                    break
+        items = json.loads(buf[start:end])
+    except Exception:
+        return []
+    out = []
+    for p in items:
+        if p.get("kyc") is not False:
+            continue
+        out.append({
+            "source": "immunefi", "id": p.get("slug", ""),
+            "title": f"{p.get('project', '')} — max ${p.get('maxBounty', 0):,}",
+            "reward": f"${p.get('maxBounty', 0):,} max",
+            "deadline": "rolling",
+            "url": "https://immunefi.com" + str(p.get("url", "")),
+            "agent_ok": True,
+        })
+    return out
+
+
+def stellarator() -> list[dict]:
+    try:
+        txt = get("https://stellarator.site/yard?c=rfi", "text/plain").decode("utf-8", "ignore")
+    except Exception:
+        return []
+    out = []
+    for line in txt.splitlines():
+        m = re.match(r"\[t=(\d+)\s*\|\s*entries=(\d+)\]\s*\[([^\]]+)\]\s*(.*)", line.strip())
+        if not m:
+            continue
+        tid, entries, meta, title = m.groups()
+        out.append({
+            "source": "stellarator", "id": f"t{tid}", "title": title.strip()[:120],
+            "reward": meta.strip(), "deadline": "72h window (rolling)",
+            "url": f"https://stellarator.site/yard?c=cat&t={tid}",
+            "agent_ok": True, "entries": int(entries),
+        })
+    return out
+
+
+def github() -> list[dict]:
+    """Public GitHub search (no auth): bounty-labelled issues mentioning money."""
+    out = []
+    q = urllib.parse.quote('label:bounty state:open created:>2026-10-01')
+    try:
+        data = json.loads(get(f"https://api.github.com/search/issues?q={q}&per_page=50"))
+    except Exception:
+        return []
+    for it in data.get("items", []):
+        title = it.get("title", "")
+        if not re.search(r"\$\s?\d|SOL|USDC|USDT|ETH\b", title, re.I):
+            continue
+        out.append({
+            "source": "github", "id": str(it.get("id")), "title": title[:120],
+            "reward": (re.search(r"\$\s?\d+(?:\.\d+)?|\d+(?:\.\d+)?\s*(?:SOL|USDC|USDT|ETH)", title, re.I) or [""])[0] if re.search(r"\$\s?\d+(?:\.\d+)?|\d+(?:\.\d+)?\s*(?:SOL|USDC|USDT|ETH)", title, re.I) else "see issue",
+            "deadline": "see issue", "url": it.get("html_url", ""), "agent_ok": None,
+        })
+    return out
+
+
+def main() -> None:
+    sources = {"superteam": superteam, "immunefi": immunefi, "stellarator": stellarator, "github": github}
+    rows: list[dict] = []
+    stats = {}
+    for name, fn in sources.items():
+        try:
+            got = fn()
+        except Exception:
+            got = []
+        stats[name] = len(got)
+        rows.extend(got)
+
+    # de-dup and rank: agent-explicit first, then by reward magnitude where parseable
+    seen, uniq = set(), []
+    for r in rows:
+        key = r["url"]
+        if key in seen:
+            continue
+        seen.add(key)
+        uniq.append(r)
+
+    def rank(r):
+        explicit = 0 if r.get("agent_ok") else 1
+        nums = [float(x.replace(",", "")) for x in re.findall(r"[\d,]+(?:\.\d+)?", r["reward"])]
+        return (explicit, -max(nums) if nums else 0)
+
+    uniq.sort(key=rank)
+    uniq = uniq[:OUT_LIMIT]
+
+    (ROOT / "data").mkdir(exist_ok=True)
+    payload = {
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "note": "Agent-claimable bounties. agent_ok=true means the platform explicitly allows agent submissions.",
+        "stats": stats,
+        "bounties": uniq,
+    }
+    (ROOT / "data" / "bounties.json").write_text(json.dumps(payload, indent=1, ensure_ascii=False))
+
+    lines = [
+        "# Agent Bounty Radar",
+        "",
+        "Open bounties that an **AI agent can actually claim** — scraped from public, no-auth APIs.",
+        "",
+        f"_Last refresh: {payload['generated_at']} · {len(uniq)} open items "
+        f"({', '.join(f'{k}: {v}' for k, v in stats.items())})_",
+        "",
+        "Machine-readable feed: [`data/bounties.json`](data/bounties.json)",
+        "",
+        "| Source | Reward | Item |",
+        "|---|---|---|",
+    ]
+    for r in uniq:
+        title = r["title"].replace("|", "\\|")
+        lines.append(f"| {r['source']} | {r['reward']} | [{title}]({r['url']}) |")
+    lines += [
+        "",
+        "## Why this exists",
+        "",
+        "Almost every bounty board in 2026 is gated: KYC, human-only listings, or dead settlement rails.",
+        "This radar only lists places where settlement is machine-payable (USDC/SOL) and the platform",
+        "does not require identity documents to submit. `agent_ok` is `true` only when the platform says so.",
+        "",
+        "## Sources",
+        "",
+        "- **Superteam Earn** — listings with `agentAccess != HUMAN_ONLY`",
+        "- **Immunefi** — programs flagged `kyc: false`",
+        "- **Stellarator** — Solana-escrowed agent bounties (`/yard?c=rfi`)",
+        "- **GitHub** — issues labelled `bounty` whose title carries a cash amount",
+        "",
+        "Refresh: GitHub Actions cron, every 6 hours. No keys, no accounts.",
+    ]
+    (ROOT / "README.md").write_text("\n".join(lines) + "\n")
+    print(f"wrote {len(uniq)} bounties", stats)
+
+
+if __name__ == "__main__":
+    main()

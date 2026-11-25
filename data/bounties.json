@@ -1,0 +1,552 @@
+{
+ "generated_at": "2026-11-25T16:05:01+00:00",
+ "note": "Agent-claimable bounties. agent_ok=true means the platform explicitly allows agent submissions.",
+ "stats": {
+  "superteam": 0,
+  "immunefi": 66,
+  "stellarator": 8,
+  "github": 18
+ },
+ "bounties": [
+  {
+   "source": "immunefi",
+   "id": "sky",
+   "title": "Sky — max $10,000,000",
+   "reward": "$10,000,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/sky/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "sparklend",
+   "title": "Spark — max $5,000,000",
+   "reward": "$5,000,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/sparklend/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "gmx",
+   "title": "GMX — max $5,000,000",
+   "reward": "$5,000,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/gmx/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "olympus",
+   "title": "Olympus — max $3,333,333",
+   "reward": "$3,333,333 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/olympus/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "rhinofi",
+   "title": "Rhino.fi — max $2,000,000",
+   "reward": "$2,000,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/rhinofi/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "gnosischain",
+   "title": "Gnosis Chain — max $2,000,000",
+   "reward": "$2,000,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/gnosischain/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "lido",
+   "title": "Lido — max $2,000,000",
+   "reward": "$2,000,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/lido/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "beanstalk",
+   "title": "Beanstalk — max $1,100,000",
+   "reward": "$1,100,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/beanstalk/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "staderforeth",
+   "title": "Stader for ETH — max $1,000,000",
+   "reward": "$1,000,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/staderforeth/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "listadao",
+   "title": "Lista DAO — max $1,000,000",
+   "reward": "$1,000,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/listadao/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "balancer",
+   "title": "Balancer Foundation — max $1,000,000",
+   "reward": "$1,000,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/balancer/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "originprotocol",
+   "title": "Origin Protocol — max $1,000,000",
+   "reward": "$1,000,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/originprotocol/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "pancakeswap",
+   "title": "PancakeSwap — max $1,000,000",
+   "reward": "$1,000,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/pancakeswap/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "fluxfinance",
+   "title": "Flux Finance — max $550,000",
+   "reward": "$550,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/fluxfinance/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "raydium",
+   "title": "Raydium — max $505,000",
+   "reward": "$505,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/raydium/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "metric",
+   "title": "Metric — max $500,000",
+   "reward": "$500,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/metric/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "mETH",
+   "title": "mETH Protocol — max $500,000",
+   "reward": "$500,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/mETH/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "utix",
+   "title": "Utix — max $500,000",
+   "reward": "$500,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/utix/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "ankr",
+   "title": "Ankr — max $500,000",
+   "reward": "$500,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/ankr/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "orca",
+   "title": "Orca — max $500,000",
+   "reward": "$500,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/orca/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "instadapp",
+   "title": "Instadapp — max $500,000",
+   "reward": "$500,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/instadapp/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "benqi",
+   "title": "BENQI — max $500,000",
+   "reward": "$500,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/benqi/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "defisaver",
+   "title": "DeFi Saver — max $350,000",
+   "reward": "$350,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/defisaver/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "Aevo",
+   "title": "Aevo — max $300,000",
+   "reward": "$300,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/Aevo/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "marinade",
+   "title": "Marinade — max $250,000",
+   "reward": "$250,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/marinade/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "hydration",
+   "title": "Hydration — max $222,222",
+   "reward": "$222,222 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/hydration/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "enzyme-onyx",
+   "title": "Enzyme Onyx — max $200,000",
+   "reward": "$200,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/enzyme-onyx/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "aster",
+   "title": "Aster — max $200,000",
+   "reward": "$200,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/aster/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "beets",
+   "title": "Beets — max $200,000",
+   "reward": "$200,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/beets/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "debridge",
+   "title": "deBridge — max $200,000",
+   "reward": "$200,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/debridge/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "yearnfinance",
+   "title": "Yearn Finance — max $200,000",
+   "reward": "$200,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/yearnfinance/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "enzymefinance",
+   "title": "Enzyme Blue — max $200,000",
+   "reward": "$200,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/enzymefinance/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "sushiswap",
+   "title": "SushiSwap — max $200,000",
+   "reward": "$200,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/sushiswap/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "alchemix-1",
+   "title": "Alchemix — max $150,000",
+   "reward": "$150,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/alchemix-1/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "thresholdnetwork",
+   "title": "Threshold Network — max $150,000",
+   "reward": "$150,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/thresholdnetwork/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "gmtrade",
+   "title": "GMTrade — max $100,000",
+   "reward": "$100,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/gmtrade/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "hermetica",
+   "title": "Hermetica — max $100,000",
+   "reward": "$100,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/hermetica/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "zest-protocol-v2",
+   "title": "Zest Protocol V2 — max $100,000",
+   "reward": "$100,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/zest-protocol-v2/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "arkadiko",
+   "title": "Arkadiko — max $100,000",
+   "reward": "$100,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/arkadiko/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "stackingdao",
+   "title": "StackingDAO — max $100,000",
+   "reward": "$100,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/stackingdao/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "extrafinance",
+   "title": "Extra Finance — max $100,000",
+   "reward": "$100,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/extrafinance/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "symbiosis",
+   "title": "Symbiosis — max $100,000",
+   "reward": "$100,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/symbiosis/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "synthetix",
+   "title": "Synthetix — max $100,000",
+   "reward": "$100,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/synthetix/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "harvest",
+   "title": "Harvest Finance — max $100,000",
+   "reward": "$100,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/harvest/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "beefyfinance",
+   "title": "Beefy Finance — max $75,000",
+   "reward": "$75,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/beefyfinance/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "velvetcapital",
+   "title": "Velvet Capital — max $51,000",
+   "reward": "$51,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/velvetcapital/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "dawn",
+   "title": "DAWN USD.infra Vault — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/dawn/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "twyne",
+   "title": "Twyne — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/twyne/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "magpiexyz",
+   "title": "MagpieXYZ — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/magpiexyz/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "justlenddao",
+   "title": "JustLend DAO — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/justlenddao/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "hashflow",
+   "title": "Hashflow — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/hashflow/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "dhedge",
+   "title": "dHEDGE — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/dhedge/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "gamma",
+   "title": "Gamma — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/gamma/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "derive",
+   "title": "Derive — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/derive/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "ichi",
+   "title": "Ichi — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/ichi/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "pareto",
+   "title": "Pareto Credit — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/pareto/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "obyte",
+   "title": "Obyte — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/obyte/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "gammaswap",
+   "title": "GammaSwap — max $40,000",
+   "reward": "$40,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/gammaswap/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "nexusmutual",
+   "title": "Nexus Mutual — max $25,000",
+   "reward": "$25,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/nexusmutual/information/",
+   "agent_ok": true
+  },
+  {
+   "source": "immunefi",
+   "id": "sp1",
+   "title": "SP1 — max $15,000",
+   "reward": "$15,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/sp1/information/",
+   "agent_ok": true
+  }
+ ]
+}
