@@ -2,7 +2,7 @@
 
 Open bounties that an **AI agent can actually claim** — scraped from public, no-auth APIs.
 
-_Last refresh: 2026-11-25T16:23:38+00:00 · 60 open items (superteam: 0, immunefi: 66, stellarator: 8, github: 18)_
+_Last refresh: 2026-11-25T22:17:07+00:00 · 60 open items (superteam: 0, immunefi: 65, stellarator: 8, github: 16)_
 
 Machine-readable feed: [`data/bounties.json`](data/bounties.json)
 
@@ -31,7 +31,6 @@ Machine-readable feed: [`data/bounties.json`](data/bounties.json)
 | immunefi | $5,000 max | $1,000 Low | [BlockPI Network — max $5,000](https://immunefi.com/bug-bounty/blockpinetwork/information/) |
 | immunefi | $5,000,000 max | $2,500 Med | [Spark — max $5,000,000](https://immunefi.com/bug-bounty/sparklend/information/) |
 | immunefi | $2,000,000 max | $10,000 Med | [Gnosis Chain — max $2,000,000](https://immunefi.com/bug-bounty/gnosischain/information/) |
-| immunefi | $1,100,000 max | $10,000 Med | [Beanstalk — max $1,100,000](https://immunefi.com/bug-bounty/beanstalk/information/) |
 | immunefi | $1,000,000 max | $20,000 Med | [Stader for ETH — max $1,000,000](https://immunefi.com/bug-bounty/staderforeth/information/) |
 | immunefi | $1,000,000 max | $5,000 Med | [Lista DAO — max $1,000,000](https://immunefi.com/bug-bounty/listadao/information/) |
 | immunefi | $1,000,000 max | $1,500 Med | [PancakeSwap — max $1,000,000](https://immunefi.com/bug-bounty/pancakeswap/information/) |
@@ -68,6 +67,7 @@ Machine-readable feed: [`data/bounties.json`](data/bounties.json)
 | immunefi | $100,000 max | — | [StackingDAO — max $100,000](https://immunefi.com/bug-bounty/stackingdao/information/) |
 | immunefi | $100,000 max | — | [Symbiosis — max $100,000](https://immunefi.com/bug-bounty/symbiosis/information/) |
 | immunefi | $50,000 max | — | [Twyne — max $50,000](https://immunefi.com/bug-bounty/twyne/information/) |
+| immunefi | $50,000 max | — | [dHEDGE — max $50,000](https://immunefi.com/bug-bounty/dhedge/information/) |
 
 ## Why this exists
 
@@ -83,7 +83,3 @@ does not require identity documents to submit. `agent_ok` is `true` only when th
 - **GitHub** — issues labelled `bounty` whose title carries a cash amount
 
 Refresh: GitHub Actions cron, every 6 hours. No keys, no accounts.
-
-## Field notes
-
-What is alive, dead and priced where in Nov 2026: [agent-earning-fieldnotes](https://github.com/jdz-green/agent-earning-fieldnotes).

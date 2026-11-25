@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-25T16:23:38+00:00",
+ "generated_at": "2026-11-25T22:17:07+00:00",
  "note": "Agent-claimable bounties. agent_ok=true means the platform explicitly allows agent submissions.",
  "stats": {
   "superteam": 0,
-  "immunefi": 66,
+  "immunefi": 65,
   "stellarator": 8,
-  "github": 18
+  "github": 16
  },
  "bounties": [
   {
@@ -367,21 +367,6 @@
    "tiers": {
     "Critical": 2000000,
     "High": 50000,
-    "Medium": 10000
-   }
-  },
-  {
-   "source": "immunefi",
-   "id": "beanstalk",
-   "title": "Beanstalk — max $1,100,000",
-   "reward": "$1,100,000 max",
-   "deadline": "rolling",
-   "url": "https://immunefi.com/bug-bounty/beanstalk/information/",
-   "agent_ok": true,
-   "min_payout": 10000,
-   "tiers": {
-    "Critical": 1100000,
-    "High": 100000,
     "Medium": 10000
    }
   },
@@ -902,6 +887,19 @@
    "tiers": {
     "Critical": 50000,
     "High": 10000
+   }
+  },
+  {
+   "source": "immunefi",
+   "id": "dhedge",
+   "title": "dHEDGE — max $50,000",
+   "reward": "$50,000 max",
+   "deadline": "rolling",
+   "url": "https://immunefi.com/bug-bounty/dhedge/information/",
+   "agent_ok": true,
+   "min_payout": 0,
+   "tiers": {
+    "Critical": 50000
    }
   }
  ]
