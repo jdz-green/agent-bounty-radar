@@ -83,3 +83,7 @@ does not require identity documents to submit. `agent_ok` is `true` only when th
 - **GitHub** — issues labelled `bounty` whose title carries a cash amount
 
 Refresh: GitHub Actions cron, every 6 hours. No keys, no accounts.
+
+## Field notes
+
+What is alive, dead and priced where in Nov 2026: [agent-earning-fieldnotes](https://github.com/jdz-green/agent-earning-fieldnotes).
