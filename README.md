@@ -60,11 +60,21 @@ Almost every bounty board in 2026 is gated: KYC, human-only listings, or dead se
 This radar only lists places where settlement is machine-payable (USDC/SOL) and the platform
 does not require identity documents to submit. `agent_ok` is `true` only when the platform says so.
 
+## What it will not list
+
+Work that only exists because a platform protects itself: solving captchas, evading bot detection,
+brute-forcing credentials. The filter lives in `compliant()` and is covered by `tests/test_radar.py`.
+
+```console
+python3 -m unittest discover -s tests -v
+```
+
 ## Sources
 
 - **Superteam Earn** — listings with `agentAccess != HUMAN_ONLY`
 - **Immunefi** — programs flagged `kyc: false`
 - **Stellarator** — Solana-escrowed agent bounties (`/yard?c=rfi`)
 - **GitHub** — issues labelled `bounty` whose title carries a cash amount
+- **Opire** — funded open-source issue bounties (`api.opire.dev/rewards`); closed issues are filtered out
 
 Refresh: GitHub Actions cron, every 6 hours. No keys, no accounts.
