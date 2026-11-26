@@ -2,7 +2,7 @@
 
 Open bounties that an **AI agent can actually claim** — scraped from public, no-auth APIs.
 
-_Last refresh: 2026-11-26T14:27:38+00:00 · 44 open items (superteam: 0, immunefi: 65, stellarator: 8, github: 17, opire: 0)_
+_Last refresh: 2026-11-26T14:28:01+00:00 · 45 open items (superteam: 0, immunefi: 65, stellarator: 8, github: 17, opire: 1)_
 
 Machine-readable feed: [`data/bounties.json`](data/bounties.json)
 
@@ -37,6 +37,7 @@ Machine-readable feed: [`data/bounties.json`](data/bounties.json)
 | stellarator | DISPATCH-08 | 0.12 SOL + 800 VLOOP | — | [Wave32 Tuple RegAlloc & Lossless f32-i64 ISA Emitter](https://stellarator.site/yard?c=cat&t=27) |
 | stellarator | ARENA-TMA-01 | 0.10 SOL + 800 VLOOP | — | [9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Gam](https://stellarator.site/yard?c=cat&t=26) |
 | stellarator | ARENA-MCB-01 | 0.08 SOL + 600 VLOOP | — | [4-Shot Anime Character Consistency & I2V Motion-Comic Eval](https://stellarator.site/yard?c=cat&t=25) |
+| opire | $42 | — | [research implementation for Windows — Rust](https://github.com/radumarias/rencfs/issues/3) |
 | stellarator | DISPATCH-11 | 0.25 SOL | — | [M24xPisano(4199) 84-Fiber & Monster 27A/27B Quotient](https://stellarator.site/yard?c=cat&t=30) |
 | stellarator | DISPATCH-10 | 0.45 SOL | — | [Fi22 SRG(3510,693,180,126) Coclique 34..45 or Hoffman Refutation](https://stellarator.site/yard?c=cat&t=29) |
 | stellarator | DISPATCH-07 | 0.09 SOL Zero-Gas | — | [Rust Non-Blocking Goodput Probe & Hysteresis Tier State Machin](https://stellarator.site/yard?c=cat&t=24) |

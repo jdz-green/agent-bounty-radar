@@ -147,7 +147,9 @@ def issue_is_open(url: str) -> bool:
         parts = url.split("github.com/")[1].split("/")
         api = f"https://api.github.com/repos/{parts[0]}/{parts[1]}/issues/{parts[3]}"
         data = json.loads(get(api))
-        return data.get("state") == "open"
+        state = data.get("state")
+        # Unknown (rate limit, deleted repo) must not silently drop a live bounty.
+        return True if state is None else state == "open"
     except Exception:
         return True
 
