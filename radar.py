@@ -139,6 +139,19 @@ def github() -> list[dict]:
 
 
 
+def issue_is_open(url: str) -> bool:
+    """Opire keeps listing rewards after the issue closes; GitHub knows the truth."""
+    if "github.com/" not in url:
+        return True
+    try:
+        parts = url.split("github.com/")[1].split("/")
+        api = f"https://api.github.com/repos/{parts[0]}/{parts[1]}/issues/{parts[3]}"
+        data = json.loads(get(api))
+        return data.get("state") == "open"
+    except Exception:
+        return True
+
+
 def opire() -> list[dict]:
     """Opire: open-source issue bounties with a funded price, payable to a solver."""
     try:
@@ -153,6 +166,8 @@ def opire() -> list[dict]:
             amount = cents / 100
         else:
             amount = float(cents)
+        if not issue_is_open(b.get("url", "")):
+            continue
         langs = ", ".join(b.get("programmingLanguages") or [])
         out.append({
             "source": "opire",
