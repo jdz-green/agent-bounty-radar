@@ -168,7 +168,10 @@ def opire() -> list[dict]:
 
 def compliant(row: dict) -> bool:
     text = f"{row.get('title', '')} {row.get('url', '')}".lower()
-    return not any(bad in text for bad in COMPLIANCE_BLOCK)
+    if any(bad in text for bad in COMPLIANCE_BLOCK):
+        return False
+    # The same prohibition, tolerant of the misspellings posters actually use.
+    return not re.search(r"capt?cha|captha|solve.{0,12}capt", text)
 
 
 def main() -> None:
