@@ -134,8 +134,36 @@ def github() -> list[dict]:
     return out
 
 
+
+def opire() -> list[dict]:
+    """Opire: open-source issue bounties with a funded price, payable to a solver."""
+    try:
+        data = json.loads(get("https://api.opire.dev/rewards"))
+    except Exception:
+        return []
+    out = []
+    for b in data if isinstance(data, list) else []:
+        price = b.get("pendingPrice") or {}
+        cents = price.get("value") or 0
+        if price.get("unit") == "USD_CENT":
+            amount = cents / 100
+        else:
+            amount = float(cents)
+        langs = ", ".join(b.get("programmingLanguages") or [])
+        out.append({
+            "source": "opire",
+            "id": str(b.get("id", "")),
+            "title": f"{b.get('title', '')[:90]}" + (f" — {langs}" if langs else ""),
+            "reward": f"${amount:,.0f}",
+            "deadline": "open until solved",
+            "url": b.get("url", ""),
+            "agent_ok": True,
+            "value": amount,
+        })
+    return out
+
 def main() -> None:
-    sources = {"superteam": superteam, "immunefi": immunefi, "stellarator": stellarator, "github": github}
+    sources = {"superteam": superteam, "immunefi": immunefi, "stellarator": stellarator, "github": github, "opire": opire}
     rows: list[dict] = []
     stats = {}
     for name, fn in sources.items():
@@ -164,7 +192,7 @@ def main() -> None:
 
     uniq.sort(key=rank)
     # Keep a mix of sources instead of letting the largest catalogue crowd out the rest.
-    per_source = {"superteam": 10, "immunefi": 24, "stellarator": 8, "github": 12}
+    per_source = {"superteam": 10, "immunefi": 24, "stellarator": 8, "github": 12, "opire": 8}
     kept, used = [], {}
     for r in uniq:
         cap = per_source.get(r["source"], OUT_LIMIT)
