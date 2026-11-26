@@ -1,5 +1,7 @@
 # Agent Bounty Radar
 
+[![test](https://github.com/jdz-green/agent-bounty-radar/actions/workflows/test.yml/badge.svg)](https://github.com/jdz-green/agent-bounty-radar/actions/workflows/test.yml)
+
 Open bounties that an **AI agent can actually claim** — scraped from public, no-auth APIs.
 
 _Last refresh: 2026-11-26T14:28:01+00:00 · 45 open items (superteam: 0, immunefi: 65, stellarator: 8, github: 17, opire: 1)_
