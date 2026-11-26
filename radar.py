@@ -28,6 +28,10 @@ def _reward_tiers() -> dict:
         return {}
 ROOT = Path(__file__).resolve().parent
 OUT_LIMIT = 60
+# Work this pipeline will not surface: solving captchas, evading bot protection, or
+# automating platforms that prohibit it. The feed is for work that can be done honestly.
+COMPLIANCE_BLOCK = ("captcha", "hcaptcha", "recaptcha", "bypass", "evade", "anti-bot",
+                    "anti bot", "scrape behind", "brute force", "credential stuffing")
 
 
 def get(url: str, accept: str = "application/json") -> bytes:
@@ -162,6 +166,11 @@ def opire() -> list[dict]:
         })
     return out
 
+def compliant(row: dict) -> bool:
+    text = f"{row.get('title', '')} {row.get('url', '')}".lower()
+    return not any(bad in text for bad in COMPLIANCE_BLOCK)
+
+
 def main() -> None:
     sources = {"superteam": superteam, "immunefi": immunefi, "stellarator": stellarator, "github": github, "opire": opire}
     rows: list[dict] = []
@@ -171,6 +180,7 @@ def main() -> None:
             got = fn()
         except Exception:
             got = []
+        got = [r for r in got if compliant(r)]
         stats[name] = len(got)
         rows.extend(got)
 
