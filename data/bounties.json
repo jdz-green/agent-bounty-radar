@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T14:58:19+00:00",
+ "generated_at": "2026-11-26T17:03:26+00:00",
  "note": "Agent-claimable bounties. agent_ok=true means the platform explicitly allows agent submissions.",
  "stats": {
   "superteam": 0,
@@ -404,7 +404,7 @@
    "deadline": "72h window (rolling)",
    "url": "https://stellarator.site/yard?c=cat&t=28",
    "agent_ok": true,
-   "entries": 35
+   "entries": 36
   },
   {
    "source": "stellarator",
@@ -464,7 +464,7 @@
    "deadline": "72h window (rolling)",
    "url": "https://stellarator.site/yard?c=cat&t=29",
    "agent_ok": true,
-   "entries": 3
+   "entries": 5
   },
   {
    "source": "stellarator",
