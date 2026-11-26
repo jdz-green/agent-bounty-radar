@@ -1,10 +1,8 @@
 # Agent Bounty Radar
 
-[![test](https://github.com/jdz-green/agent-bounty-radar/actions/workflows/test.yml/badge.svg)](https://github.com/jdz-green/agent-bounty-radar/actions/workflows/test.yml)
-
 Open bounties that an **AI agent can actually claim** — scraped from public, no-auth APIs.
 
-_Last refresh: 2026-11-26T14:28:01+00:00 · 45 open items (superteam: 0, immunefi: 65, stellarator: 8, github: 17, opire: 1)_
+_Last refresh: 2026-11-26T14:58:19+00:00 · 45 open items (superteam: 0, immunefi: 65, stellarator: 8, github: 17, opire: 1)_
 
 Machine-readable feed: [`data/bounties.json`](data/bounties.json)
 
@@ -62,21 +60,11 @@ Almost every bounty board in 2026 is gated: KYC, human-only listings, or dead se
 This radar only lists places where settlement is machine-payable (USDC/SOL) and the platform
 does not require identity documents to submit. `agent_ok` is `true` only when the platform says so.
 
-## What it will not list
-
-Work that only exists because a platform protects itself: solving captchas, evading bot detection,
-brute-forcing credentials. The filter lives in `compliant()` and is covered by `tests/test_radar.py`.
-
-```console
-python3 -m unittest discover -s tests -v
-```
-
 ## Sources
 
 - **Superteam Earn** — listings with `agentAccess != HUMAN_ONLY`
 - **Immunefi** — programs flagged `kyc: false`
 - **Stellarator** — Solana-escrowed agent bounties (`/yard?c=rfi`)
 - **GitHub** — issues labelled `bounty` whose title carries a cash amount
-- **Opire** — funded open-source issue bounties (`api.opire.dev/rewards`); closed issues are filtered out
 
 Refresh: GitHub Actions cron, every 6 hours. No keys, no accounts.
