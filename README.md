@@ -2,7 +2,7 @@
 
 Open bounties that an **AI agent can actually claim** — scraped from public, no-auth APIs.
 
-_Last refresh: 2026-11-26T07:19:15+00:00 · 60 open items (superteam: 0, immunefi: 65, stellarator: 8, github: 15)_
+_Last refresh: 2026-11-26T07:21:10+00:00 · 44 open items (superteam: 0, immunefi: 65, stellarator: 8, github: 15)_
 
 Machine-readable feed: [`data/bounties.json`](data/bounties.json)
 
@@ -32,42 +32,26 @@ Machine-readable feed: [`data/bounties.json`](data/bounties.json)
 | immunefi | $5,000,000 max | $2,500 Med | [Spark — max $5,000,000](https://immunefi.com/bug-bounty/sparklend/information/) |
 | immunefi | $2,000,000 max | $10,000 Med | [Gnosis Chain — max $2,000,000](https://immunefi.com/bug-bounty/gnosischain/information/) |
 | immunefi | $1,000,000 max | $20,000 Med | [Stader for ETH — max $1,000,000](https://immunefi.com/bug-bounty/staderforeth/information/) |
-| immunefi | $1,000,000 max | $5,000 Med | [Lista DAO — max $1,000,000](https://immunefi.com/bug-bounty/listadao/information/) |
-| immunefi | $1,000,000 max | $1,500 Med | [PancakeSwap — max $1,000,000](https://immunefi.com/bug-bounty/pancakeswap/information/) |
-| immunefi | $505,000 max | $5,000 Med | [Raydium — max $505,000](https://immunefi.com/bug-bounty/raydium/information/) |
-| immunefi | $500,000 max | $5,000 Med | [mETH Protocol — max $500,000](https://immunefi.com/bug-bounty/mETH/information/) |
-| immunefi | $500,000 max | $10,000 Med | [Orca — max $500,000](https://immunefi.com/bug-bounty/orca/information/) |
-| immunefi | $350,000 max | $10,000 Med | [DeFi Saver — max $350,000](https://immunefi.com/bug-bounty/defisaver/information/) |
-| immunefi | $200,000 max | $5,000 Med | [Enzyme Onyx — max $200,000](https://immunefi.com/bug-bounty/enzyme-onyx/information/) |
-| immunefi | $200,000 max | $5,000 Med | [Aster — max $200,000](https://immunefi.com/bug-bounty/aster/information/) |
-| immunefi | $200,000 max | $5,000 Med | [deBridge — max $200,000](https://immunefi.com/bug-bounty/debridge/information/) |
-| immunefi | $200,000 max | $5,000 Med | [Yearn Finance — max $200,000](https://immunefi.com/bug-bounty/yearnfinance/information/) |
-| immunefi | $150,000 max | $2,000 Med | [Threshold Network — max $150,000](https://immunefi.com/bug-bounty/thresholdnetwork/information/) |
-| immunefi | $100,000 max | $5,000 Med | [GMTrade — max $100,000](https://immunefi.com/bug-bounty/gmtrade/information/) |
-| immunefi | $100,000 max | $3,000 Med | [Extra Finance — max $100,000](https://immunefi.com/bug-bounty/extrafinance/information/) |
-| immunefi | $51,000 max | $1,000 Med | [Velvet Capital — max $51,000](https://immunefi.com/bug-bounty/velvetcapital/information/) |
-| immunefi | $50,000 max | $10,000 Med | [JustLend DAO — max $50,000](https://immunefi.com/bug-bounty/justlenddao/information/) |
-| immunefi | $50,000 max | $5,000 Med | [Gamma — max $50,000](https://immunefi.com/bug-bounty/gamma/information/) |
-| immunefi | $50,000 max | $5,000 Med | [Pareto Credit — max $50,000](https://immunefi.com/bug-bounty/pareto/information/) |
-| immunefi | $50,000 max | $1,000 Med | [Obyte — max $50,000](https://immunefi.com/bug-bounty/obyte/information/) |
-| immunefi | $25,000 max | $3,000 Med | [Nexus Mutual — max $25,000](https://immunefi.com/bug-bounty/nexusmutual/information/) |
-| immunefi | $15,000 max | $2,000 Med | [SP1 — max $15,000](https://immunefi.com/bug-bounty/sp1/information/) |
-| immunefi | $3,333,333 max | — | [Olympus — max $3,333,333](https://immunefi.com/bug-bounty/olympus/information/) |
-| immunefi | $1,000,000 max | — | [Balancer Foundation — max $1,000,000](https://immunefi.com/bug-bounty/balancer/information/) |
-| immunefi | $1,000,000 max | — | [Origin Protocol — max $1,000,000](https://immunefi.com/bug-bounty/originprotocol/information/) |
-| immunefi | $500,000 max | — | [Utix — max $500,000](https://immunefi.com/bug-bounty/utix/information/) |
-| immunefi | $500,000 max | — | [Instadapp — max $500,000](https://immunefi.com/bug-bounty/instadapp/information/) |
-| immunefi | $500,000 max | — | [BENQI — max $500,000](https://immunefi.com/bug-bounty/benqi/information/) |
-| immunefi | $250,000 max | — | [Marinade — max $250,000](https://immunefi.com/bug-bounty/marinade/information/) |
-| immunefi | $200,000 max | — | [Beets — max $200,000](https://immunefi.com/bug-bounty/beets/information/) |
-| immunefi | $200,000 max | — | [Enzyme Blue — max $200,000](https://immunefi.com/bug-bounty/enzymefinance/information/) |
-| immunefi | $100,000 max | — | [Hermetica — max $100,000](https://immunefi.com/bug-bounty/hermetica/information/) |
-| immunefi | $100,000 max | — | [Zest Protocol V2 — max $100,000](https://immunefi.com/bug-bounty/zest-protocol-v2/information/) |
-| immunefi | $100,000 max | — | [Arkadiko — max $100,000](https://immunefi.com/bug-bounty/arkadiko/information/) |
-| immunefi | $100,000 max | — | [StackingDAO — max $100,000](https://immunefi.com/bug-bounty/stackingdao/information/) |
-| immunefi | $100,000 max | — | [Symbiosis — max $100,000](https://immunefi.com/bug-bounty/symbiosis/information/) |
-| immunefi | $50,000 max | — | [Twyne — max $50,000](https://immunefi.com/bug-bounty/twyne/information/) |
-| immunefi | $50,000 max | — | [dHEDGE — max $50,000](https://immunefi.com/bug-bounty/dhedge/information/) |
+| stellarator | DISPATCH-09 | 0.12 SOL + 800 VLOOP | — | [Dual-Issue Wave32 SRAM & 32-Bank LDS Cycle Emulator](https://stellarator.site/yard?c=cat&t=28) |
+| stellarator | DISPATCH-08 | 0.12 SOL + 800 VLOOP | — | [Wave32 Tuple RegAlloc & Lossless f32-i64 ISA Emitter](https://stellarator.site/yard?c=cat&t=27) |
+| stellarator | ARENA-TMA-01 | 0.10 SOL + 800 VLOOP | — | [9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Gam](https://stellarator.site/yard?c=cat&t=26) |
+| stellarator | ARENA-MCB-01 | 0.08 SOL + 600 VLOOP | — | [4-Shot Anime Character Consistency & I2V Motion-Comic Eval](https://stellarator.site/yard?c=cat&t=25) |
+| stellarator | DISPATCH-07 | 0.09 SOL Zero-Gas | — | [Rust Non-Blocking Goodput Probe & Hysteresis Tier State Machin](https://stellarator.site/yard?c=cat&t=24) |
+| stellarator | DISPATCH-06 | 0.09 SOL Zero-Gas | — | [Multi-Channel Event Kinematics & Rhythm Anomaly Classifier](https://stellarator.site/yard?c=cat&t=23) |
+| stellarator | DISPATCH-05 | 0.12 SOL Zero-Gas | — | [Offline Protocol Snapshot Derivative Filter & FDV Ranker](https://stellarator.site/yard?c=cat&t=22) |
+| stellarator | DISPATCH-04 | 0.10 SOL Zero-Gas | — | [Grounded Passage Citation Verifier & Abstention DPO Synth](https://stellarator.site/yard?c=cat&t=21) |
+| github | $250 | — | [fix(dwarf_trace): Preserve exact column-offset delta invariants across exception handler tables ($250 bounty) [cpython-p](https://github.com/IES-BoilerRoom/cpython-pep626-line-profiler/issues/2) |
+| github | $175 | — | [ci/plonk_kzg: Fix transcript chunk boundary check and grand-product coset shift witness - Reward $175 USDC](https://github.com/IES-BoilerRoom/zk-plonk-transcript-verifier/issues/1) |
+| github | $125 | — | [fix(dwarf_trace): Resolve trace frame ceiling off-by-one and PEP 626 instruction-envelope residue ($125 bounty) [collect](https://github.com/IES-BoilerRoom/cpython-pep626-line-profiler/issues/1) |
+| github | $75 | — | [[Bounty] ($75) perf/fix: Align Fiat-Shamir challenge domain separator across multi-proof ](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4398) |
+| github | $75 | — | [($75) perf/fix: Align Fiat-Shamir challenge domain separator across multi-proof aggregation (zk-plonk-transcript-verifie](https://github.com/IES-BoilerRoom/zk-plonk-transcript-verifier/issues/2) |
+| github | 0.12 SOL | — | [🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper & Implied-FDV Ranker (t=22)](https://github.com/incidere/solana-agent-bounties/issues/7) |
+| github | 0.12 SOL | — | [🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomaly & Rug-Pull Radar Scorer](https://github.com/incidere/vloop-free-openai-mcp/issues/1) |
+| github | 0.12 SOL | — | [🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomaly & Rug-Pull Radar Scorer](https://github.com/incidere/solana-agent-bounties/issues/1) |
+| github | 0.10 SOL | — | [🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Game (t=26](https://github.com/incidere/solana-agent-bounties/issues/13) |
+| github | 0.10 SOL | — | [🪙 [Bounty] [0.10 SOL Zero-Gas] Grounded Passage Citation Verifier & Abstention DPO Pair Synthesizer (t=21)](https://github.com/incidere/solana-agent-bounties/issues/6) |
+| github | 0.09 SOL | — | [🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis Tier Controller (t=24)](https://github.com/incidere/solana-agent-bounties/issues/9) |
+| github | 0.09 SOL | — | [🪙 [Bounty] [0.09 SOL Zero-Gas] Multi-Channel 2D Kinematics & Burst-Rhythm Anomaly Verifier (t=23)](https://github.com/incidere/solana-agent-bounties/issues/8) |
 
 ## Why this exists
 

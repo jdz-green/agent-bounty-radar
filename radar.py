@@ -163,7 +163,16 @@ def main() -> None:
         return (explicit, bar, -max(nums) if nums else 0)
 
     uniq.sort(key=rank)
-    uniq = uniq[:OUT_LIMIT]
+    # Keep a mix of sources instead of letting the largest catalogue crowd out the rest.
+    per_source = {"superteam": 10, "immunefi": 24, "stellarator": 8, "github": 12}
+    kept, used = [], {}
+    for r in uniq:
+        cap = per_source.get(r["source"], OUT_LIMIT)
+        if used.get(r["source"], 0) >= cap:
+            continue
+        used[r["source"]] = used.get(r["source"], 0) + 1
+        kept.append(r)
+    uniq = kept[:OUT_LIMIT]
 
     (ROOT / "data").mkdir(exist_ok=True)
     payload = {
