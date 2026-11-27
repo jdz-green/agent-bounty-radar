@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-27T01:47:03+00:00",
+ "generated_at": "2026-11-27T16:48:37+00:00",
  "note": "Agent-claimable bounties. agent_ok=true means the platform explicitly allows agent submissions.",
  "stats": {
   "superteam": 0,
-  "immunefi": 65,
+  "immunefi": 66,
   "stellarator": 8,
-  "github": 17,
+  "github": 0,
   "opire": 1
  },
  "bounties": [
@@ -394,7 +394,7 @@
    "deadline": "72h window (rolling)",
    "url": "https://stellarator.site/yard?c=cat&t=31",
    "agent_ok": true,
-   "entries": 13
+   "entries": 23
   },
   {
    "source": "stellarator",
@@ -408,13 +408,23 @@
   },
   {
    "source": "stellarator",
+   "id": "t37",
+   "title": "8-Channel Ternary Phase Array (513+ Vectors)",
+   "reward": "DISPATCH-15 | 0.50 SOL + 1000 VLOOP",
+   "deadline": "72h window (rolling)",
+   "url": "https://stellarator.site/yard?c=cat&t=37",
+   "agent_ok": true,
+   "entries": 0
+  },
+  {
+   "source": "stellarator",
    "id": "t33",
    "title": "1D Sparse Interferometer Baseline Array (|A|<=2000, k^2/L < 2.6390)",
    "reward": "DISPATCH-13 | 0.10..0.50 SOL + 1000 VLOOP",
    "deadline": "72h window (rolling)",
    "url": "https://stellarator.site/yard?c=cat&t=33",
    "agent_ok": true,
-   "entries": 1
+   "entries": 4
   },
   {
    "source": "stellarator",
@@ -465,124 +475,6 @@
    "url": "https://stellarator.site/yard?c=cat&t=14",
    "agent_ok": true,
    "entries": 4
-  },
-  {
-   "source": "stellarator",
-   "id": "t13",
-   "title": "Live Telegram Invite-Graph & Jump-Bot Telemetry Post-FunStat/TelegramDB",
-   "reward": "RFI-03",
-   "deadline": "72h window (rolling)",
-   "url": "https://stellarator.site/yard?c=cat&t=13",
-   "agent_ok": true,
-   "entries": 5
-  },
-  {
-   "source": "github",
-   "id": "6623326404",
-   "title": "[350 USDC] Fix ALU64 chunk ceiling boundary and tristate tnum scalar bitmask witness (refine_bpf_tnum_frames)",
-   "reward": "350 USDC",
-   "deadline": "see issue",
-   "url": "https://github.com/IES-BoilerRoom/ebpf-verifier-reg-bounds/issues/1",
-   "agent_ok": null
-  },
-  {
-   "source": "github",
-   "id": "6623326884",
-   "title": "[$250] fix(verifier): Tighten 32-bit subregister zero-extension parity across conditional joins (ebpf-verifier-reg-bound",
-   "reward": "$250",
-   "deadline": "see issue",
-   "url": "https://github.com/IES-BoilerRoom/ebpf-verifier-reg-bounds/issues/2",
-   "agent_ok": null
-  },
-  {
-   "source": "github",
-   "id": "6623325618",
-   "title": "[$200] fix(ftl_ecc): Resolve ZNS frame length boundary and align 64-lane BCH syndrome parity word (unpack_zns_metadata_f",
-   "reward": "$200",
-   "deadline": "see issue",
-   "url": "https://github.com/IES-BoilerRoom/nvme-zns-bch-ecc-simulator/issues/1",
-   "agent_ok": null
-  },
-  {
-   "source": "github",
-   "id": "6623325859",
-   "title": "ci/ftl_ecc: Stabilize polynomial-to-dual-basis trace tag across zone append descriptors - Reward $175 USDC",
-   "reward": "$175",
-   "deadline": "see issue",
-   "url": "https://github.com/IES-BoilerRoom/nvme-zns-bch-ecc-simulator/issues/2",
-   "agent_ok": null
-  },
-  {
-   "source": "github",
-   "id": "6592428189",
-   "title": "ci/plonk_kzg: Fix transcript chunk boundary check and grand-product coset shift witness - Reward $175 USDC",
-   "reward": "$175",
-   "deadline": "see issue",
-   "url": "https://github.com/IES-BoilerRoom/zk-plonk-transcript-verifier/issues/1",
-   "agent_ok": null
-  },
-  {
-   "source": "github",
-   "id": "6593660372",
-   "title": "[Bounty] ($75) perf/fix: Align Fiat-Shamir challenge domain separator across multi-proof ",
-   "reward": "$75",
-   "deadline": "see issue",
-   "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4398",
-   "agent_ok": null
-  },
-  {
-   "source": "github",
-   "id": "6592428327",
-   "title": "($75) perf/fix: Align Fiat-Shamir challenge domain separator across multi-proof aggregation (zk-plonk-transcript-verifie",
-   "reward": "$75",
-   "deadline": "see issue",
-   "url": "https://github.com/IES-BoilerRoom/zk-plonk-transcript-verifier/issues/2",
-   "agent_ok": null
-  },
-  {
-   "source": "github",
-   "id": "6592038930",
-   "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper & Implied-FDV Ranker (t=22)",
-   "reward": "0.12 SOL",
-   "deadline": "see issue",
-   "url": "https://github.com/incidere/solana-agent-bounties/issues/7",
-   "agent_ok": null
-  },
-  {
-   "source": "github",
-   "id": "6590809282",
-   "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomaly & Rug-Pull Radar Scorer",
-   "reward": "0.12 SOL",
-   "deadline": "see issue",
-   "url": "https://github.com/incidere/vloop-free-openai-mcp/issues/1",
-   "agent_ok": null
-  },
-  {
-   "source": "github",
-   "id": "6590807515",
-   "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomaly & Rug-Pull Radar Scorer",
-   "reward": "0.12 SOL",
-   "deadline": "see issue",
-   "url": "https://github.com/incidere/solana-agent-bounties/issues/1",
-   "agent_ok": null
-  },
-  {
-   "source": "github",
-   "id": "6594015147",
-   "title": "🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Game (t=26",
-   "reward": "0.10 SOL",
-   "deadline": "see issue",
-   "url": "https://github.com/incidere/solana-agent-bounties/issues/13",
-   "agent_ok": null
-  },
-  {
-   "source": "github",
-   "id": "6592038632",
-   "title": "🪙 [Bounty] [0.10 SOL Zero-Gas] Grounded Passage Citation Verifier & Abstention DPO Pair Synthesizer (t=21)",
-   "reward": "0.10 SOL",
-   "deadline": "see issue",
-   "url": "https://github.com/incidere/solana-agent-bounties/issues/6",
-   "agent_ok": null
   }
  ]
 }
