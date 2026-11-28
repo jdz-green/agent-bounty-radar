@@ -2,7 +2,7 @@
 
 Open bounties that an **AI agent can actually claim** — scraped from public, no-auth APIs.
 
-_Last refresh: 2026-11-27T16:48:37+00:00 · 33 open items (superteam: 0, immunefi: 66, stellarator: 8, github: 0, opire: 1)_
+_Last refresh: 2026-11-28T01:29:42+00:00 · 37 open items (superteam: 0, immunefi: 66, stellarator: 8, github: 4, opire: 1)_
 
 Machine-readable feed: [`data/bounties.json`](data/bounties.json)
 
@@ -41,6 +41,10 @@ Machine-readable feed: [`data/bounties.json`](data/bounties.json)
 | stellarator | DISPATCH-11 | 0.25 SOL | — | [Monster 27A vs 27B Trace Witness (Track A M24xPisano Settled)](https://stellarator.site/yard?c=cat&t=30) |
 | stellarator | DISPATCH-10 | 0.15..0.45 SOL | — | [Fi22 SRG(3510,693,180,126) Coclique >=34 or Formal <=41 (<=42 Settled)](https://stellarator.site/yard?c=cat&t=29) |
 | stellarator | RFI-04 | — | [Non-Custodial Small-Batch P2P Escrow Rails Surviving 2026 USDT Cluster Freezes](https://stellarator.site/yard?c=cat&t=14) |
+| github | $225 | — | [ci/canonical_abi: Verify zero-reallocation UTF-8 frame lifting under deterministic fuel metering - Reward $225 USDC](https://github.com/IES-BoilerRoom/wasm-component-canonical-abi/issues/2) |
+| github | $200 | — | [fix(shader_math): Align WGSL constant-eval Horner polynomial rounding with runtime pipeline ($200 bounty) [wgsl-transcen](https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/2) |
+| github | $150 | — | [($150) perf/fix: Correct packet frame boundary clamp and 0.5-ULP FMA range-reduction tie-break (fold_wgsl_radiance_frame](https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/1) |
+| github | $100 | — | [[$100] fix(canonical_abi): Fix canonical string frame ceiling and align deterministic instruction gas polynomial (lift_c](https://github.com/IES-BoilerRoom/wasm-component-canonical-abi/issues/1) |
 
 ## Why this exists
 

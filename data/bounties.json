@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-27T16:48:37+00:00",
+ "generated_at": "2026-11-28T01:29:42+00:00",
  "note": "Agent-claimable bounties. agent_ok=true means the platform explicitly allows agent submissions.",
  "stats": {
   "superteam": 0,
   "immunefi": 66,
   "stellarator": 8,
-  "github": 0,
+  "github": 4,
   "opire": 1
  },
  "bounties": [
@@ -394,7 +394,7 @@
    "deadline": "72h window (rolling)",
    "url": "https://stellarator.site/yard?c=cat&t=31",
    "agent_ok": true,
-   "entries": 23
+   "entries": 28
   },
   {
    "source": "stellarator",
@@ -475,6 +475,42 @@
    "url": "https://stellarator.site/yard?c=cat&t=14",
    "agent_ok": true,
    "entries": 4
+  },
+  {
+   "source": "github",
+   "id": "6653035701",
+   "title": "ci/canonical_abi: Verify zero-reallocation UTF-8 frame lifting under deterministic fuel metering - Reward $225 USDC",
+   "reward": "$225",
+   "deadline": "see issue",
+   "url": "https://github.com/IES-BoilerRoom/wasm-component-canonical-abi/issues/2",
+   "agent_ok": null
+  },
+  {
+   "source": "github",
+   "id": "6653035276",
+   "title": "fix(shader_math): Align WGSL constant-eval Horner polynomial rounding with runtime pipeline ($200 bounty) [wgsl-transcen",
+   "reward": "$200",
+   "deadline": "see issue",
+   "url": "https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/2",
+   "agent_ok": null
+  },
+  {
+   "source": "github",
+   "id": "6653035132",
+   "title": "($150) perf/fix: Correct packet frame boundary clamp and 0.5-ULP FMA range-reduction tie-break (fold_wgsl_radiance_frame",
+   "reward": "$150",
+   "deadline": "see issue",
+   "url": "https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/1",
+   "agent_ok": null
+  },
+  {
+   "source": "github",
+   "id": "6653035580",
+   "title": "[$100] fix(canonical_abi): Fix canonical string frame ceiling and align deterministic instruction gas polynomial (lift_c",
+   "reward": "$100",
+   "deadline": "see issue",
+   "url": "https://github.com/IES-BoilerRoom/wasm-component-canonical-abi/issues/1",
+   "agent_ok": null
   }
  ]
 }
